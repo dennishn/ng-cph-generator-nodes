@@ -1,0 +1,26 @@
+{
+  "name": "ng-demo",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "nCore": "*",
+    "gsap": "^1.16",
+    "angular-foundation": "*",
+    "foundation": "*",
+    "ngstorage": "~0.3.0",
+    "angular-sanitize": "^1.4.0",
+    "angular-animate": "^1.4.0",
+    "angular-touch": "^1.4.0",
+    "angular-ui-router": "^0.2.10",
+    "angular-loading-bar": "^0.8.0",
+    "angular-busy": "^4.1.0",
+    "angulartics": "~1.0.0",
+    "angulartics-google-analytics": "~0.1.4",
+    "firebase": "~2.4.1",
+    "angularfire": "~1.1.3"
+  },
+  "appPath": "app/",
+  "resolutions": {
+    "angular": "^1.4.0"
+  }
+}
