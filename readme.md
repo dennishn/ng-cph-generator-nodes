@@ -24,7 +24,7 @@ If you want to run this project on your own machine, i urge you to set up your o
 3. Install these NPM packages globally
 
 ```bash
-npm install -g bower gulp
+npm install -g bower grunt
 ```
 
 ## Get started
