@@ -19,6 +19,13 @@
 	angular
 		.module('API_ENDPOINTS', [])
 		.constant('API_ENDPOINTS', {
-			root: 'api/'
+			root: 'https://ngcphplusone.firebaseio.com/',
+			plusOnes: {
+				list: 'plusOnes',
+				single: 'plusOnes/:id',
+				create: 'plusOnes',
+				update: 'plusOnes/:id',
+				remove: 'plusOnes/:id'
+			}
 		});
 })();

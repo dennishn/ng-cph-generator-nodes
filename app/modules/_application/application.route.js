@@ -3,9 +3,13 @@
 
 	/**
 	 * @name application
+	 * @author Dennis Haulund Nielsen
 	 * @description
 	 *
-	 * Root Application state configuration
+	 * Root Application abstract state configuration
+	 *
+	 * This is an abstract state that all views must be children off.
+	 * This helps immensely with topics such as security and sharing data between states.
 	 */
 	angular.module('application')
 		/* @ngInject */

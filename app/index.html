@@ -13,10 +13,12 @@
     </head>
     <body ng-app="ng-demo">
 
-        <h1>ng-demo</h1>
+        <div class="row">
+            <h1>plusOne Voting app <small>AngularJS Meetup demo</small></h1>
 
-        <!-- Application Entry: -->
-        <div ui-view="root"></div>
+            <!-- Application Entry: -->
+            <div ui-view="root"></div>
+        </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
         <script>
@@ -67,9 +69,14 @@
 		<script src="modules/_application/application.module.js"></script>
 		<script src="modules/_application/application.route.js"></script>
 		<script src="modules/_application/application.controller.js"></script>
-		<script src="modules/index/index.module.js"></script>
-		<script src="modules/index/index.route.js"></script>
-		<script src="modules/index/index.controller.js"></script>
+		<script src="modules/plusOnes/plusOnes.module.js"></script>
+		<script src="modules/plusOnes/plusOnes.route.js"></script>
+		<script src="modules/plusOnes/plusOnes.controller.js"></script>
+		<script src="modules/plusOnes/single/plusOnesSingle.controller.js"></script>
+		<script src="modules/plusOnes/create/plusOnesCreate.controller.js"></script>
+		<script src="models/PlusOne/PlusOnes.module.js"></script>
+		<script src="models/PlusOne/PlusOne.factory.js"></script>
+		<script src="models/PlusOne/PlusOnes.service.js"></script>
 		<!-- endbuild -->
 </body>
 </html>

@@ -1,0 +1,8 @@
+<ul>
+    <li ng-repeat="plusOne in plusOnes.plusOnesList">
+        <a ui-sref="application.plusOnes.single({id: plusOne.$id})">
+            {{plusOne.name}}
+        </a>
+    </li>
+</ul>
+<a ui-sref="application.plusOnes.create" class="button">Create a new plusOne</a>

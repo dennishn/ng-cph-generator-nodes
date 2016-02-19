@@ -31,18 +31,26 @@
 					   cfpLoadingBarProvider,
 					   $httpProvider) {
 
+		// Set logging levels based on our DEBUG_ENV constant.
+		// This is also where you would control logging to third-party services.
 		if($logProvider.debugEnabled && DEBUG_ENV) {
 			$logProvider.debugEnabled(true);
 		} else {
 			$logProvider.debugEnabled(false);
 		}
 
+		// We only want the loading bar and not the spinner.
 		cfpLoadingBarProvider.includeSpinner = false;
 		cfpLoadingBarProvider.latencyThreshold = 100;
 
+		// We always run with html5Mode enabled.
+		// A .htaccess with the necesarry configs for Apache is provided in our generator.
 		$locationProvider.html5Mode(true);
+		// We like having 404 pages!
 		$urlRouterProvider.otherwise('/404');
 
+		// Some catch-states we can redirect to if something bad happens.
+		// The state "error" is not a child of "application" as we mostly use this state to deny people access etc.
 		$stateProvider
 			.state('application.notfound', {
 				url: '/404',

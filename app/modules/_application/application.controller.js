@@ -3,7 +3,7 @@
 
 	/**
 	 * @name application
-	 * @description
+	 * @author Dennis Haulund Nielsen
 	 *
 	 * Root Application Controller
 	 */
@@ -16,11 +16,6 @@
 		/*jshint validthis: true */
 		var vm = this;
 
-		activate();
-
-		function activate() {
-
-		}
 	}
 
 })();

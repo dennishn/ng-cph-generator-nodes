@@ -1,0 +1,16 @@
+<h4>plusOne Name: {{plusOneSingle.plusOne.name}}</h4>
+<p>Created: {{plusOneSingle.plusOne.created | date : 'HH:mm:ss'}} - Modified: {{plusOneSingle.plusOne.updated | date : 'HH:mm:ss'}}</p>
+
+<form novalidate name="plusOneSingle.plusOneForm" ng-submit="plusOneSingle.createPlusOneSuggestion()">
+    <label for="plusOneName">Suggestion</label>
+    <input type="text" id="plusOneName" name="plusOneName" ng-model="plusOneSingle.plusOneSuggestion.name">
+    <button type="submit" ng-disabled="!plusOneSingle.plusOneSuggestion.name">Save</button>
+</form>
+<br>
+<h2>Suggestions</h2>
+<ul>
+    <li ng-repeat="suggestion in plusOneSingle.plusOne.suggestions">
+        {{suggestion.name}}
+        <button ng-click="plusOneSingle.voteOnSuggestion(suggestion.$id)">plusOne this suggestion {{suggestion.votes}}</button>
+    </li>
+</ul>

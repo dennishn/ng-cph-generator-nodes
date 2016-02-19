@@ -25,7 +25,8 @@
 			'ngStorage',
 			'config',
 			'application',
-			'index',
+			'plusOnes',
+			'PlusOnes',
 			/* ---> Do not delete this comment (ngImports) <--- */
 	]);
 })();
